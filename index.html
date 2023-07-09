@@ -1,0 +1,47 @@
+<html>
+
+<head>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+h1 {
+  margin: 0
+}
+.box {
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #333333;
+  background: #555555;
+}
+.hid-box {
+  top: 100%;
+  position: relative;
+  transition: all .3s ease-out;
+  background: orangered;
+  height: 100%;
+  padding: 7px;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+.box:hover > .hid-box{
+  top: 0;
+}
+  </style>
+<body>
+  <div class="box">
+    <div class="hid-box">
+      <h1>CSS3 slide up</h1>
+      <p>This is a quick demo of slide-up effect using CSS animation when hover the box. No JS required!</p>
+    </div>
+  </div>
+</body>
+
+</html>
